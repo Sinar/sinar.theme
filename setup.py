@@ -32,7 +32,6 @@ setup(name='Sinar.Theme',
           'plone.app.referenceablebehavior',
           'collective.dexteritytextindexer',
           'plone.app.multilingual',
-          'plone.multilingualbehavior',
           'z3c.jbot'
           # -*- Extra requirements: -*-
       ],
