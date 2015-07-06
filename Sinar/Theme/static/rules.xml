@@ -33,9 +33,54 @@
     </replace>
     
     <!--home page-->
-    <rules css:if-content=".template-document_view.section-front-page">
+    <rules css:if-content=".template-document_view.section-front-page, .template-document_view.section-cover-page">
+        <replace css:theme-children="#featured_rep" css:content=".featured-portrait > div" />
+        <replace css:theme-children="#featured_vid" css:content="#portlets-below > div.cell.BelowTitlePortletManager2 > div" />
+        
+        <!--tweet/latest widget-->
+        <replace css:theme-children=".tweet-widget">
+            <div class="widget-title orange-head">
+                <h3><xsl:value-of css:select=".portletEmbed.portlet-embed-mp-tweets > .portletHeader"/></h3>
+            </div>
+            <div class="widget-content">
+                <xsl:copy-of css:select=".portletEmbed.portlet-embed-mp-tweets > .portletItem"/>
+            </div>
+        </replace>
+        <replace css:theme-children=".latest-widget">
+            <div class="widget-title orange-head">
+                <h3><xsl:value-of css:select="#portlets-below > div.cell.BelowPortletManager2 > div > dl > dt"/></h3>
+            </div>
+            <div class="widget-content">
+                <ul class="no-bullet">
+                    <xsl:for-each css:select="#portlets-below > div.cell.BelowPortletManager2 > div > dl > dd">
+                        <li><xsl:copy-of css:select="a"/></li>
+                    </xsl:for-each>
+                </ul>
+            </div>
+        </replace>
+        <!--theme-->
         <theme href="main.html"/>
     </rules>
+    
+    <!--about/support widget-->
+    <replace css:theme-children=".about-widget">
+        <div class="widget-title white-head">
+            <h3><xsl:value-of css:select="#portlets-footer > div:nth-child(1) > div > dl > dt"/></h3>
+        </div>
+        <div class="widget-content">
+            <xsl:copy-of css:select="#portlets-footer > div:nth-child(1) > div > dl > .portletItem > *"/>
+            <p><xsl:copy-of css:select="#portlets-footer > div:nth-child(1) > div > dl > .portletFooter a"/></p>
+        </div>
+    </replace>
+    <replace css:theme-children=".support-widget">
+        <div class="widget-title white-head">
+            <h3><xsl:value-of css:select="#portlets-footer > div:nth-child(2) > div > dl > dt"/></h3>
+        </div>
+        <div class="widget-content">
+            <xsl:copy-of css:select="#portlets-footer > div:nth-child(2) > div > dl > .portletItem > *"/>
+            <p><xsl:copy-of css:select="#portlets-footer > div:nth-child(2) > div > dl > .portletFooter a"/></p>
+        </div>
+    </replace>
     
     <!--replace theme content-->
     <replace css:theme-children=".main_content" css:content-children="#portal-column-content"/>
