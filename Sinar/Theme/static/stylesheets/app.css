@@ -7877,7 +7877,18 @@ p.description {
 
 /*featured */
 #featured_content #featured_rep {
-  padding: 10px 0; }
+  padding: 10px 0;
+  position: relative; }
+  #featured_content #featured_rep img {
+    /*width: 100%;*/ }
+  #featured_content #featured_rep div {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 10px; }
+    #featured_content #featured_rep div p {
+      margin-bottom: 0; }
 #featured_content #featured_vid {
   padding: 10px 0; }
 

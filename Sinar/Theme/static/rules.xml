@@ -34,7 +34,20 @@
     
     <!--home page-->
     <rules css:if-content=".template-document_view.section-front-page, .template-document_view.section-cover-page">
-        <replace css:theme-children="#featured_rep" css:content=".featured-portrait > div" />
+        <replace css:theme-children="#featured_rep">
+            <xsl:copy-of css:select=".featured-portrait > div > img"/>
+            <div>
+                <xsl:element name="p">
+                    <xsl:attribute name="class">text-center</xsl:attribute>
+                    <xsl:element name="a">
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="//div[@class='featured-portrait']/a/@href" />
+                        </xsl:attribute>
+                        <xsl:value-of css:select=".featured-portrait > a"/>
+                    </xsl:element>
+                </xsl:element>
+            </div>
+        </replace>
         <replace css:theme-children="#featured_vid" css:content="#portlets-below > div.cell.BelowTitlePortletManager2 > div" />
         
         <!--tweet/latest widget-->
