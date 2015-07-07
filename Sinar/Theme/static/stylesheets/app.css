@@ -7939,7 +7939,7 @@ p.description {
   right: 5%;
   z-index: 200; }
   #login-wrapper ul {
-    margin-left: 10px;
+    margin-left: 5px;
     list-style: none;
     font-size: 14px;
     background: #F79400;
@@ -7950,6 +7950,49 @@ p.description {
       display: inline; }
       #login-wrapper ul li a {
         color: #fff; }
+  #login-wrapper #portal-personaltools dt {
+    background: #F79400;
+    padding: 1px 20px;
+    border-radius: 0 0 10px 10px; }
+    #login-wrapper #portal-personaltools dt a {
+      color: #fff; }
+  #login-wrapper #portal-personaltools dd {
+    background: #F79400; }
+    #login-wrapper #portal-personaltools dd ul {
+      background: transparent;
+      padding: 0; }
+
+.rep-infosubtitle, .rep-infotitle, .rep-above-titlename {
+  font-family: Helvetica, Roboto, Arial, sans-serif; }
+
+.rep-above-titlename {
+  color: #333;
+  font-size: 28px !important; }
+
+.rep-titlename {
+  color: #333; }
+
+.rep-infotitle {
+  font-size: 18px;
+  font-weight: bold; }
+
+.rep-infosubtitle {
+  font-size: 14px;
+  font-weight: bold; }
+
+dl.bordered-list {
+  border: 1px solid #ccc;
+  padding: 5px; }
+  dl.bordered-list dt {
+    color: #F79400;
+    margin: 0;
+    padding: 5px 0; }
+  dl.bordered-list dd {
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+    padding: 5px 0; }
+  dl.bordered-list dd:last-child {
+    border-bottom: none; }
 
 /* @group Content Area */
 /* Editor styles */
