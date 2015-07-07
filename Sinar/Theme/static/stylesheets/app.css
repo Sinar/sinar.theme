@@ -7932,6 +7932,9 @@ p.description {
     text-align: right;
     color: #fff;
     margin-bottom: 0; }
+    #bottom-footer #copyright abbr {
+      color: #fff;
+      border-bottom: none; }
 
 /*top strip - personal tools*/
 #login-wrapper {
