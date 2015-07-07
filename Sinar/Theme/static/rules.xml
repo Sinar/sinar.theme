@@ -62,7 +62,7 @@
                 </xsl:element>
             </div>
         </replace>
-        <replace css:theme-children="#featured_vid" css:content="#portlets-below > div.cell.BelowTitlePortletManager2 > div" />
+        <replace css:theme-children="#featured_vid" css:content="#portlets-below > div.cell.BelowTitlePortletManager2 > div > dl > .portletItem.odd > p > iframe" />
         
         <!--tweet/latest widget-->
         <replace css:theme-children=".tweet-widget">
