@@ -16,6 +16,9 @@
     <merge theme="/html/body" content="/html/body" attributes="dir"/>
     <append css:theme="body" css:content="#plone-analytics"/>
     
+    <!--temporary drop theme footer columns don't have content-->
+    <drop css:theme="#top-footer" />
+    
     <!--logo-->
     <replace css:theme-children="#sitename" css:content="#portal-logo"/>
     
