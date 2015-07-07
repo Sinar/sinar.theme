@@ -7933,6 +7933,24 @@ p.description {
     color: #fff;
     margin-bottom: 0; }
 
+/*top strip - personal tools*/
+#login-wrapper {
+  position: absolute;
+  right: 5%;
+  z-index: 200; }
+  #login-wrapper ul {
+    margin-left: 10px;
+    list-style: none;
+    font-size: 14px;
+    background: #F79400;
+    padding: 5px 20px;
+    border-radius: 0 0 10px 10px;
+    display: inline; }
+    #login-wrapper ul li {
+      display: inline; }
+      #login-wrapper ul li a {
+        color: #fff; }
+
 /* @group Content Area */
 /* Editor styles */
 #content .discreet, #sidebar .discreet {

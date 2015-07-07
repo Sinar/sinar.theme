@@ -19,6 +19,14 @@
     <!--logo-->
     <replace css:theme-children="#sitename" css:content="#portal-logo"/>
     
+    <!--login-->
+    <before css:theme-children="#header">
+        <div id="login-wrapper">
+            <xsl:copy-of css:select="#portal-languageselector"/>
+            <xsl:copy-of css:select="#portal-personaltools"/>
+        </div>
+    </before>
+    
     <!--main menu-->
     <replace css:theme-children="#mainmenu" css:content-children="#portal-globalnav"/>
     <replace css:theme-children="#footer-menu" css:content-children="#portal-globalnav"/>
