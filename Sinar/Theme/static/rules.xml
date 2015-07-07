@@ -22,6 +22,9 @@
     <!--logo-->
     <replace css:theme-children="#sitename" css:content="#portal-logo"/>
     
+    <!--copyright-->
+    <replace css:theme-children="#copyright" css:content-children="#portal-footer p" />
+    
     <!--login-->
     <before css:theme-children="#header">
         <div id="login-wrapper">
