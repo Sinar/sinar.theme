@@ -9930,7 +9930,7 @@ form[action="enl_subscribers_view"] input[type="submit"] {
 #content .documentDescription, #content #description {
   color: #666;
   margin-left: 0;
-  font-size: 1.25em;
+  font-size: 14px;
   font-weight: bold; }
 
 /*internallinkcontainer + radioscrolllist*/
