@@ -7829,7 +7829,7 @@ p.description {
     #header h1 span {
       color: #666;
       margin-right: 10px; }
-  #header .search-wrapper {
+  #header #main-search {
     margin: 4.5rem 0 0; }
 
 /*main menu*/
