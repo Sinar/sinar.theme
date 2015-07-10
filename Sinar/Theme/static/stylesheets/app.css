@@ -8009,6 +8009,10 @@ dl.bordered-list {
   dl.bordered-list dd:last-child {
     border-bottom: none; }
 
+/*breadcrumbs*/
+#portal-breadcrumbs {
+  font-size: 80%; }
+
 @media only screen and (min-width:64.063em) {
   #footer-menu li {
     float: left;
