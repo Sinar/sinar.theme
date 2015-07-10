@@ -67,6 +67,10 @@
     
     <!--home page-->
     <rules css:if-content=".template-document_view.section-front-page, .template-document_view.section-cover-page">
+        <before css:theme-children="#search_section > div">
+            <xsl:copy-of css:select="#edit-bar"/>
+            <xsl:copy-of css:select=".portalMessage.info"/>
+        </before>
         <replace css:theme-children="#featured_rep">
             <xsl:copy-of css:select=".featured-portrait > div > img"/>
             <div>
