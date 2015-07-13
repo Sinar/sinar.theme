@@ -47,10 +47,25 @@
                         <button class="postfix"><i class="fa fa-search"></i></button>
                     </div>
                     <br /><br />
-                    <xsl:copy-of css:select="#LSResult"/>
+                    <xsl:copy-of css:select="#LSResult.LSResult"/>
                 </div>
             </form>
         </div>
+    </replace>
+    
+    <replace css:theme-children=".find-rep > div:nth-child(2)">
+        <!--<p>-->
+        <!--    <xsl:value-of select="//*[contains(@class, 'portletItem')]/form/@action"/>-->
+        <!--    <xsl:value-of select="//*[@id='portal-searchbox']/form/@action"/>-->
+        <!--</p>-->
+        <xsl:element name="form">
+            <xsl:attribute name="action">
+                <xsl:value-of select="//*[contains(@class, 'portletItem')]/form/@action"/>
+            </xsl:attribute>
+            <xsl:copy-of css:select=".searchField.portlet-search-gadget"/>
+            <xsl:copy-of css:select=".portletSearch .LSResult"/>
+        </xsl:element>
+        
     </replace>
     
     <!--main menu-->

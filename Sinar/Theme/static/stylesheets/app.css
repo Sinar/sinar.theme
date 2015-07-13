@@ -8013,6 +8013,12 @@ dl.bordered-list {
 #portal-breadcrumbs {
   font-size: 80%; }
 
+.LSResult {
+  position: absolute;
+  z-index: 100;
+  background: #fff;
+  padding: 0 20px; }
+
 @media only screen and (min-width:64.063em) {
   #footer-menu li {
     float: left;
